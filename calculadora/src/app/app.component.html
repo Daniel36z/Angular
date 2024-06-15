@@ -1,0 +1,9 @@
+
+<div style="text-align: center;">
+  <h1>Calculadora 3000</h1>
+  <app-formulario
+   [elnumero1]="elnumero1" [elnumero2]="elnumero2" (v1)="elnumero1=$event" (v2)="elnumero2=$event">
+  </app-formulario>
+  <app-resultado [elnumero1]="elnumero1"  [elnumero2]="elnumero2"></app-resultado>
+</div>
+

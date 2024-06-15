@@ -1,0 +1,222 @@
+.pagina{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,114,219,1) 76%, rgba(0,212,255,1) 100%);
+}
+.neon {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #31FF00;
+    font-family: Garamond;
+    font-size: 72px;
+    text-align: center;
+}
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 10px rgba(49, 255, 0, .7),
+          0 0 40px rgba(49, 255, 0, .7),
+          0 0 100px rgba(49, 255, 0, .7);
+      }
+      to {
+        text-shadow:
+          0 0 5px rgba(49, 255, 0, .7),
+          0 0 20px rgba(49, 255, 0, .7),
+          0 0 60px rgba(49, 255, 0, .7);
+      }
+}
+.ancla1{
+    display: inline;
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    text-decoration: none;
+    border-color: black;
+    padding: 20px;
+    padding-top:10px;
+    padding-bottom: 12px;
+}
+.ancla1:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,114,219,1) 76%, rgba(0,212,255,1) 100%);
+    color:rgb(28, 238, 9);
+}
+nav{
+    background-color: rgb(91, 235, 34);
+    height: 55px;
+    display: grid;
+    place-items: center;
+}
+
+
+.titulo1{
+    text-align: center;
+    position: relative;
+    bottom: 67px;
+    border-color: rgb(243, 237, 237);
+    border-width: 10px;
+    color: rgb(243, 238, 239);
+    width: 200px;
+    padding: 30px;
+}
+
+.parrafo1{
+    color: rgb(248, 247, 247);
+    font-size: 30px;
+    position: relative;
+    right: 250px;
+    bottom: 70px;
+}
+
+section{
+    background-color: black;
+    height: 800px;
+    width: 900px;
+    position: relative;
+    left: 250px;
+}
+
+.frame1{
+    width: 800px;
+    height: 500px;
+    border: 1px solid rgb(234, 250, 9);
+    position: relative;
+    left: 330px;
+}
+
+.div-der{
+    float:left;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(116, 214, 3);
+    margin: 30px;
+}
+
+.div-izq{
+    margin: 30px;
+    float:right;
+    width: 300px;
+    height: 300px;
+}
+
+
+.div3{
+    position: relative;
+    top:35px;
+    left:328px;
+    width: 225px;
+    height: 53px;
+}
+
+
+.botonir{
+    color: rgb(252, 246, 246);
+    text-align: center;
+    position: relative;
+    top:-356px;
+    left:19px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.logos{
+    padding: 3px;
+    margin: 30px;
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+}
+
+.divpie{
+    text-align: center;
+    background-color:  rgb(91, 235, 34);
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+  
+}
+
+iframe{
+    position: absolute;
+    top:5%;
+    right: 3%;
+    border: 2px solid rgb(116, 214, 3);
+}
+
+/*--------------------------------------*/
+/*** ESTILOS BOTÓN GROW SPIN ***/
+.ov-btn-grow-spin {
+   background-color:  rgb(116, 214, 3);
+    color: #0a0a0a; /* color de fuente */
+    border: 2px solid #0e0d0d; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .ov-btn-grow-spin:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .ov-btn-grow-spin::after {
+    content: "";
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(13,114,219,1) 76%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0) rotate(-180deg);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-spin:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1) rotate(0deg);
+  }
+
+.info4{
+    position: relative;
+    top: 135px;
+    right: 67px;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.parrafo2{
+    position: relative;
+    left: 150px;
+    text-align: left;
+    border: 2px solid rgb(116, 214, 3);
+    height: 220px;
+    width: 500px;
+    font-size: 20px;
+
+}
+
+.titulo2{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 46px;
+   
+}
+
+.model3d{
+    position: relative;
+    top:125px;
+    left: 640px;
+    width: 230px;
+    height: 200px;
+}
