@@ -8,8 +8,9 @@ import { ConexionApiService } from '../conexion-api.service';
 })
 export class MainComponent implements OnInit{
 
-  title= 'titulo';
-  data:any = {};
+  //si fuera una lista --> data:any[] = [];
+  data:any = {}; // recibir un objeto unico no una lista
+
 
   constructor(private conexionApiService: ConexionApiService){}
 
@@ -19,19 +20,19 @@ export class MainComponent implements OnInit{
   }
 
 
+
+  index:string;
+
   getData(): void {
-    this.conexionApiService.getData().subscribe(
+    this.conexionApiService.getData(this.index).subscribe(
       response => {
         this.data = response;
-        console.log(this.data);
       },
       error => {
         console.error('Error al obtener datos', error);
       }
     );
   }
-
-  
 
 
 

@@ -1,13 +1,22 @@
-<div *ngIf="data">
-  <h1>Datos obtenidos de la API:</h1>
+<input type="text" [(ngModel)]="index" />
+<button (click)="getData()">pulsa</button>
 
-      {{data.name}}
+<div *ngIf="data" class="fondo">
 
-      <div>
-        <img src={{data.image}} >
-      </div>
+  <h1 class="title">{{ data.name }}</h1>
+
+  <div class="img">
+    <img src="{{ data.image }}" />
+  </div>
+
+  <div class="properties">
+    {{ data.status }}
+    {{ data.species }}
+    {{ data.origin.name }}
+  </div>
+
+
+
 </div>
 
-<div>
 
-</div>
