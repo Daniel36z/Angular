@@ -1,19 +1,31 @@
-<input type="text" [(ngModel)]="index" />
-<button (click)="getData()">pulsa</button>
+
 
 <div *ngIf="data" class="fondo">
 
-  <h1 class="title">{{ data.name }}</h1>
 
-  <div class="img">
-    <img src="{{ data.image }}" />
+<div class="nav">
+  <input type="text" [(ngModel)]="index" />
+  <button (click)="getData()">pulsa</button>
+</div>
+
+  <div class="carta" >
+      <h1 class="title">{{ data.name }}</h1>
+      <img src="{{ data.image }}" class="img"/>
+
+      <div class="properties">
+        <label *ngIf="data" >Status: {{ data.status }}</label>
+        <!--<label *ngIf="data.status == 'Alive'" >66</label>-->
+        <label *ngIf="data"  >Species: {{ data.species }}</label>
+        <label >Home planet: {{ data.origin.name }}</label>
+      </div>
   </div>
 
-  <div class="properties">
-    {{ data.status }}
-    {{ data.species }}
-    {{ data.origin.name }}
-  </div>
+
+
+
+
+
+
 
 
 

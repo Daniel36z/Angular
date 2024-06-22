@@ -23,6 +23,7 @@ export class MainComponent implements OnInit{
 
   index:string;
 
+
   getData(): void {
     this.conexionApiService.getData(this.index).subscribe(
       response => {
