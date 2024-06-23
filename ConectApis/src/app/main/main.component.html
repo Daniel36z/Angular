@@ -1,12 +1,11 @@
 
 
-<div *ngIf="data" class="fondo">
+<body *ngIf="data" class="fondo">
 
-
-<div class="nav">
-  <input type="text" [(ngModel)]="index" />
-  <button (click)="getData()">pulsa</button>
-</div>
+  <div class="nav">
+    <input type="text" [(ngModel)]="index" />
+    <button (click)="getData()">pulsa</button>
+  </div>
 
   <div class="carta" >
       <h1 class="title">{{ data.name }}</h1>
@@ -20,15 +19,6 @@
       </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-</div>
+</body>
 
 
