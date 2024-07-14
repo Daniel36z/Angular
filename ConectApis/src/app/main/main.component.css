@@ -74,3 +74,77 @@ body{
 
 }
 
+.fondo1{
+  position: relative;
+  top: 190px;
+  left: 60px;
+  width: 300px;
+  height: 300px;
+  animation:
+    portalAnimation 12s linear infinite alternate;
+}
+
+.fondo2{
+  position: relative;
+  top: 190px;
+  right: 120px;
+  width: 300px;
+  height: 300px;
+  animation:
+    ovniAnimation 22s linear infinite alternate;
+
+}
+
+
+@keyframes portalAnimation {
+  0% {
+    transform: scale(0.1,0.1);
+  }
+
+  30%{
+    transform: rotateZ(60deg);
+  }
+
+  50% {
+    filter: drop-shadow(0px 7px 21px rgba(153, 245, 4, 0.849));
+    transform: scale(1,1);
+    transform: rotateZ(90deg);
+  }
+
+
+  100% {
+    transform: scale(0.1,0.1);
+
+  }
+
+
+}
+
+
+
+@keyframes ovniAnimation {
+  0% {
+    transform: scale(0,0);
+  }
+
+  30%{
+    transform: scale(0,0);
+  }
+
+  45% {
+    filter: drop-shadow(0px 7px 21px rgba(244, 248, 0, 0.897));
+    transform: scale(1,1);
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: translate(10px, 20px);
+  }
+
+  60%{
+    transform: translate(1000px, 20px);
+  }
+  100% {
+    transform: scale(0,0);
+  }
+
+}

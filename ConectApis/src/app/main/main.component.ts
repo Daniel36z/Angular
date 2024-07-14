@@ -7,7 +7,7 @@ import { ConexionApiService } from '../conexion-api.service';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit{
-
+  rutaImagen: string = '/src/assets/portal1.png';
   //si fuera una lista --> data:any[] = [];
   data:any = {}; // recibir un objeto unico no una lista
 
