@@ -2,10 +2,15 @@
 
 <body *ngIf="data" class="fondo">
 
-  <div class="nav">
-    <input type="text" [(ngModel)]="index" />
-    <button (click)="getData()">pulsa</button>
+  <div class="containerSearch">
+    <div class="nav">
+      <input class="inputSelector" type="text" [(ngModel)]="index" />
+    </div>
+    <div class="nav2">
+      <button class="buttonSelector" (click)="getData()">pulsa</button>
+    </div>
   </div>
+
 
   <div class="carta" >
       <h1 class="title">{{ data.name }}</h1>
@@ -20,6 +25,7 @@
 
   <img src="assets/portal.png" class="fondo1">
   <img src="assets/ovni.png" class="fondo2">
+  <img src="assets/loguito.png" class="fondo3">
 
 
 </body>

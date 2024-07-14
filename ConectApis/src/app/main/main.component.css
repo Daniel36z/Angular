@@ -1,6 +1,7 @@
 html, body {  /*oupar el 100% de la screen*/
   height: 100%;
   margin: 0;
+  z-index: 1;
 }
 
 @keyframes girar {
@@ -31,10 +32,42 @@ body{
 
 
 
-.nav{
+.containerSearch{
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 270px;
+  left: 940px;
+  width: 180px;
+  height: 80px;
+  background-color: rgb(71, 77, 77);
+  text-align: center;
+  padding: 5px;
+  border: solid rgb(158, 235, 14);
+  border-radius: 10px;
+}
+
+.nav{
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  padding: 2px;
+}
+
+.nav2{
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.inputSelector{
+  color: aliceblue;
+  background-color: black;
+  font: oblique bold 70% cursive;
+  text-align: center;
+}
+
+
+
+.buttonSelector{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 .carta{
@@ -81,70 +114,123 @@ body{
   width: 300px;
   height: 300px;
   animation:
-    portalAnimation 12s linear infinite alternate;
+    portalAnimation 20s linear infinite, portalAnimation2 20s linear infinite ;
 }
 
 .fondo2{
   position: relative;
-  top: 190px;
-  right: 120px;
-  width: 300px;
-  height: 300px;
+  top: 110px;
+  right: 190px;
+  height: 150px;
+  width: 200px;
   animation:
-    ovniAnimation 22s linear infinite alternate;
+    ovniAnimation 20s linear infinite;
 
 }
 
 
 @keyframes portalAnimation {
   0% {
-    transform: scale(0.1,0.1);
+    transform: scale(0.3,0.3);
+
   }
 
-  30%{
-    transform: rotateZ(60deg);
+
+  25% {
+    transform: scale(1,1);
   }
 
   50% {
-    filter: drop-shadow(0px 7px 21px rgba(153, 245, 4, 0.849));
     transform: scale(1,1);
-    transform: rotateZ(90deg);
   }
-
 
   100% {
-    transform: scale(0.1,0.1);
+    transform: scale(0,0);
+
+  }
+}
+
+
+@keyframes portalAnimation2{
+
+  26%{
+    transform: rotateZ(160deg);
 
   }
 
+  49%{
+    transform: rotateZ(170deg);
+  }
 
+  59%{
+    transform: rotateZ(190deg);
+  }
 }
 
 
 
+
+
 @keyframes ovniAnimation {
-  0% {
-    transform: scale(0,0);
+  0%{
+    transform: scale(0.0,0.0);
+  }
+
+  24%{
+    transform: scale(0.5,0.5);
+  }
+  25%{
+    transform: translate(0px,0px);
+    transform: scale(1,1);
   }
 
   30%{
-    transform: scale(0,0);
+    transform: translate(400px,-200px);
   }
 
-  45% {
-    filter: drop-shadow(0px 7px 21px rgba(244, 248, 0, 0.897));
-    transform: scale(1,1);
-    transform: rotateZ(0deg);
+  35%{
+    transform: translate(800px,80px);
+  }
+
+  40%{
+    transform: translate(1400px,10px);
+  }
+  49%{
+    transform: scale(0,0);
   }
   50%{
-    transform: translate(10px, 20px);
-  }
-
-  60%{
-    transform: translate(1000px, 20px);
-  }
-  100% {
+    transform: translate(1600px,10px);
     transform: scale(0,0);
   }
 
+  100%{
+    transform: translate(1600px,10px);
+    transform: scale(0,0);
+  }
+}
+
+
+.fondo3{
+  width: 310px;
+  height: 240px;
+  position: relative;
+  left: 400px;
+  filter: drop-shadow(0px 7px 21px rgb(235, 163, 28));
+  animation:
+    logoAnimation 6s linear infinite;
+}
+
+
+@keyframes logoAnimation {
+  0%{
+    transform: scale(0.7,0.7);
+  }
+
+  50%{
+    transform: scale(1,1);
+  }
+
+  100%{
+    transform: scale(0.7,0.7);
+  }
 }
