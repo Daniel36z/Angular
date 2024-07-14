@@ -1,13 +1,15 @@
 
 
-<body *ngIf="data" class="fondo">
+<body *ngIf="data" class="main">
+
+
 
   <div class="containerSearch">
     <div class="nav">
       <input class="inputSelector" type="text" [(ngModel)]="index" />
     </div>
     <div class="nav2">
-      <button class="buttonSelector" (click)="getData()">pulsa</button>
+      <button class="buttonSelector" (click)="getData()">Search</button>
     </div>
   </div>
 
@@ -26,7 +28,6 @@
   <img src="assets/portal.png" class="fondo1">
   <img src="assets/ovni.png" class="fondo2">
   <img src="assets/loguito.png" class="fondo3">
-
 
 </body>
 

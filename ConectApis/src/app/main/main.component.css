@@ -1,8 +1,8 @@
-html, body {  /*oupar el 100% de la screen*/
+html, body {  /*ocupar el 100% de la screen*/
   height: 100%;
   margin: 0;
-  z-index: 1;
 }
+
 
 @keyframes girar {
   0% {
@@ -23,11 +23,6 @@ html, body {  /*oupar el 100% de la screen*/
 
 body{
   position: fixed;
-  background-color: rgb(8, 8, 8);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 
@@ -35,9 +30,9 @@ body{
 .containerSearch{
   position: absolute;
   top: 270px;
-  left: 940px;
-  width: 180px;
-  height: 80px;
+  left: 990px;
+  width: 100px;
+  height: 70px;
   background-color: rgb(71, 77, 77);
   text-align: center;
   padding: 5px;
@@ -52,11 +47,12 @@ body{
 }
 
 .nav2{
-  margin-top: 10px;
+  margin-top: 4px;
   padding: 2px;
 }
 
 .inputSelector{
+  width: 90px;
   color: aliceblue;
   background-color: black;
   font: oblique bold 70% cursive;
@@ -83,6 +79,7 @@ body{
 }
 
 .title{
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
