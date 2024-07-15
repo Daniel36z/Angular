@@ -1,7 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+
 body
 {
   background-image: url("./assets/fondoStar.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body{
+  animation: backgroundAnimation 30s linear infinite;
+}
+
+
+@keyframes backgroundAnimation {
+  0% {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-size: 160%;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
