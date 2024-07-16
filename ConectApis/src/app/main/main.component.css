@@ -241,26 +241,26 @@ body{
   right: 680px;
   bottom: 130px;
   filter: drop-shadow(0px 7px 21px rgb(253, 253, 253));
-
+  filter: hue-rotate(180deg);
+  filter: sepia(1) hue-rotate(-400deg) saturate(10) brightness(1.2);
 }
 
 
 .fondo4:hover{
   animation:
-  logoAnimation2 2s linear infinite;
+  logoAnimation2 4s linear infinite;
 }
 
 @keyframes logoAnimation2 {
   0%{
-    filter: drop-shadow(0px 7px 21px rgb(3, 243, 55));
-    transform: scale(0.7,0.7);
+    filter: drop-shadow(0px 7px 21px rgb(248, 252, 3)) sepia(1) hue-rotate(-400deg) saturate(10) brightness(1.2);
+    transform: scale(0.8,0.8);
   }
   50%{
     filter: drop-shadow(0px 7px 21px rgb(243, 19, 3));
-    transform: scale(1.4,1.4);
-  }
+    transform: scale(1.2,1.2);}
   100%{
-    filter: drop-shadow(0px 7px 21px rgb(152, 0, 253));
-    transform: scale(1.2,1.2);
+    filter: drop-shadow(0px 7px 21px rgb(253, 228, 0)) sepia(1) hue-rotate(-400deg) saturate(10) brightness(1.2);;
+    transform: scale(0.8,0.8);
   }
 }
