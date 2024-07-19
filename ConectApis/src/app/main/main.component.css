@@ -28,6 +28,7 @@ body{
 
 
 .containerSearch{
+  z-index: 30;
   position: absolute;
   top: 270px;
   left: 990px;
@@ -67,6 +68,7 @@ body{
 }
 
 .carta{
+  z-index: 40;
   position: absolute;
   width: 350px;
   height: 540px;
@@ -208,6 +210,7 @@ body{
 
 
 .fondo3{
+  z-index: 30;
   width: 310px;
   height: 240px;
   position: relative;
@@ -238,7 +241,7 @@ body{
   width: 180px;
   height: 100px;
   position: relative;
-  right: 680px;
+  right: 720px;
   bottom: 130px;
   filter: drop-shadow(0px 7px 21px rgb(253, 253, 253));
   filter: hue-rotate(180deg);
@@ -262,5 +265,78 @@ body{
   100%{
     filter: drop-shadow(0px 7px 21px rgb(253, 228, 0)) sepia(1) hue-rotate(-400deg) saturate(10) brightness(1.2);;
     transform: scale(0.8,0.8);
+    filter: drop-shadow(0px 7px 21px rgb(243, 19, 3));
+  }
+}
+
+
+
+.bannerText{
+  z-index: 20;
+  width: 160px;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  left: 240px;
+  bottom: 212px;
+  color: #b1fa07;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 15px 15px  0px;
+  border: 2px solid rgb(245, 245, 245);
+
+  animation:
+  infoAnimation 4s linear infinite;
+
+}
+
+
+@keyframes infoAnimation{
+  0%{
+    filter: drop-shadow(0px 7px 21px rgb(255, 238, 1));
+  }
+  50%{
+    border: 2px solid rgb(215, 0, 243);
+    filter: drop-shadow(0px 7px 21px rgb(255, 1, 65));
+
+  }
+  100%{
+    filter: drop-shadow(0px 7px 21px rgb(175, 3, 243));
+  }
+}
+
+
+.textInfo{
+  margin: 5px;
+}
+
+
+.fondo5{
+  width: 180px;
+  height: 180px;
+  z-index: -10;
+  animation:
+  pepinilloAnimation 30s linear infinite;
+}
+
+
+@keyframes pepinilloAnimation{
+  0%{
+    transform: translate(500px,0px);
+  }
+  25%{
+    transform: translate(1000px,200px);
+
+  }
+  50%{
+    transform: translate(1000px,-500px);
+  }
+
+  75%{
+    transform: translate(-200px,-0px);
+  }
+
+  100%{
+    transform: translate(500px,0px);
   }
 }
