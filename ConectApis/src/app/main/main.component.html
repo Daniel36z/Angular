@@ -14,12 +14,12 @@
 
   <div class="carta" >
       <h1 class="title">{{ data.name }}</h1>
-      <img src="{{ data.image }}" class="img"/>
+      <img  src="{{ data.image }}" class="img"/>
 
       <div class="properties">
-        <label *ngIf="data" >Status: {{ data.status }}</label>
-        <label *ngIf="data"  >Species: {{ data.species }}</label>
-        <label >Home planet: {{ data.origin.name }}</label>
+        <label *ngIf="data" class="data">Status: {{ data.status}}</label>
+        <label *ngIf="data" class="data" >Species: {{ data.species }}</label>
+        <label class="data" >Home planet: {{ data.origin.name }}</label>
       </div>
   </div>
 
